@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('Renogare-Regular.woff2') format('woff2');
+      /* url('fonts/opensans-regular.woff') format('woff'); */
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+html {
+    height: 100%;
+    overflow:auto;
+}
+
+body {
+    background-color:#F6F3F2!important;
+    height: 100%;
+}
+
+h1{
+    font-family: 'Renogare', sans-serif;
+}
+
+.bg-lightgray{
+    background-color: #F0ECEA;
+}
+ 
+.header {
+    height: 90px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.container-nav-bar{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero{
+    height: 645px;
+    background-image: url("../img/hero-xl-img.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    --bs-navbar-brand-margin-end: 2.5rem!important;
+}
+
+.navbar-nav{
+    width: 100%;
+    --bs-navbar-color:#1E1712;
+    --bs-navbar-hover-color: rgb(239, 72, 35);
+    --bs-navbar-nav-link-padding-x: 2rem;
+    --bs-nav-link-padding-y: 0.9rem!important;
+}
+
+.mleft-auto{
+    margin-left: auto;
+}
+
+.nav-link{
+    font-family: 'Renogare', sans-serif;
+    border-radius: .8rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.navbar-nav button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+
+    align-items: center;
+}
+
+.navbar-nav button svg{
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    color: currentColor;
+    
+}
+
+footer h6{
+    font-family: 'Renogare', sans-serif;
+}
+
+footer a:hover{
+    color: rgb(239, 72, 35)!important;
+}
+
+footer .text-reset {
+    font-family: 'Renogare';
+    font-size: 15px;
+    text-decoration: none;
+}
+/* 
+-----------HOME - CATEGORIES ----------------- */
+
+.category-icon{
+    width: 124px;
+    height: 124px;
+    background-image: url("../img/ic-categories-bg.png");
+    background-size: cover;
+}
