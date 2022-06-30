@@ -111,10 +111,27 @@ footer .text-reset {
 }
 /* 
 -----------HOME - CATEGORIES ----------------- */
+.category-item {
+    text-decoration: none;
+    color: #1E1712;
+}
 
+.category-item:hover{
+    color: currentColor;
+}
+
+.category-item h3{
+    font-family: 'Renogare', sans-serif;
+    font-size: 1.3em;
+}
 .category-icon{
     width: 124px;
     height: 124px;
     background-image: url("../img/ic-categories-bg.png");
     background-size: cover;
+    transition: .5s;
+}
+
+.category-item:hover > .category-icon{
+    transform: scale(1.1);
 }
