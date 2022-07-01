@@ -42,6 +42,31 @@ body {
     background-color: #F0ECEA;
 }
 
+.card {
+    --bs-card-spacer-y: 1.3rem;
+    --bs-card-spacer-x: 1.3rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 1.3rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(1.3rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+}
+.img-fluid{
+    border-radius: 1.3rem 1.3rem 0 0;
+    height: 260px;
+}
+
 .btn{
     --bs-btn-padding-x: 2rem;
     --bs-btn-padding-y: 1rem;
@@ -73,6 +98,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    z-index: 999;
 }
 
 .container-nav-bar{
