@@ -24,12 +24,46 @@ body {
     height: 100%;
 }
 
-h1{
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+.h1, h1{
     font-family: 'Renogare', sans-serif;
+}
+
+@media (min-width: 1200px){
+    .h2, h2 {
+        font-size: 2.5rem;
+    }
 }
 
 .bg-lightgray{
     background-color: #F0ECEA;
+}
+
+.btn{
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-border-radius: 2rem;
+    --bs-btn-border-width: 2px;
+    font-family: 'Renogare', sans-serif;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: #1E1712;
+    --bs-btn-border-color: #1E1712;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1E1712;
+    --bs-btn-hover-border-color: #1E1712;
+    --bs-btn-focus-shadow-rgb: 108,117,125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1E1712;
+    --bs-btn-active-border-color: #1E1712;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-gradient: none;
 }
  
 .header {
