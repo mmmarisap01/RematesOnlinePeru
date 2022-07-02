@@ -99,11 +99,18 @@ body {
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
+    min-width: 260px;
+    transition: .5s;
+}
+
+.card:hover{
+    transform: translate(0, -10px);
 }
 .card figure{margin:0}
 .card img.img-fluid{
     border-radius: 1.3rem 1.3rem 0 0;
     height: 260px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -142,13 +149,31 @@ body {
     border-color: #FF1200;
     --bs-btn-focus-shadow-rgb: #c50d00;
 }
-
+.card .btn-destacado-color:hover{
+    background-color: #e70f00;
+}
 .card .btn-en-vivo-color{
     background-color: #2D2D2D;
     border-width: 1px;
     border-color: #2D2D2D;
     --bs-btn-focus-shadow-rgb: #070707;
 }
+.card .btn-en-vivo-color:hover{
+    background-color: #070707;
+}
+
+
+.date-countdown-group{
+    font-size: .85em;
+    display: flex;
+    align-items: center;
+}
+.date-countdown-group img{
+    height: 18px;
+    width: auto;
+    margin-bottom: 2px;
+}
+
 /* 
 ---------------------------------------------------------------------------------------------------------- */
  
