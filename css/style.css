@@ -7,8 +7,15 @@
 
 @font-face {
     font-family: 'Renogare';
-    src: url('Renogare-Regular.woff2') format('woff2');
-      /* url('fonts/opensans-regular.woff') format('woff'); */
+    src: url('Renogare-Regular.woff2') format('woff2'),
+         url('Renogare-Regular.woff') format('woff'),
+         url('Renogare-Regular.ttf')  format('truetype');
+         /* src: url('webfont.eot'); /* IE9 Compat Modes */
+         /* src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         /*      url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         /*      url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         /*      url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         /*      url('webfont.svg#svgFontName') format('svg'); Legacy iOS */
     font-style: normal;
     font-weight: normal;
   }
@@ -42,30 +49,7 @@ body {
     background-color: #F0ECEA;
 }
 
-.card {
-    --bs-card-spacer-y: 1.3rem;
-    --bs-card-spacer-x: 1.3rem;
-    --bs-card-title-spacer-y: 0.5rem;
-    --bs-card-border-width: 0;
-    --bs-card-border-color: var(--bs-border-color-translucent);
-    --bs-card-border-radius: 1.3rem;
-    --bs-card-box-shadow: ;
-    --bs-card-inner-border-radius: calc(1.3rem - 1px);
-    --bs-card-cap-padding-y: 0.5rem;
-    --bs-card-cap-padding-x: 1rem;
-    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
-    --bs-card-cap-color: ;
-    --bs-card-height: ;
-    --bs-card-color: ;
-    --bs-card-bg: #fff;
-    --bs-card-img-overlay-padding: 1rem;
-    --bs-card-group-margin: 0.75rem;
-    position: relative;
-}
-.img-fluid{
-    border-radius: 1.3rem 1.3rem 0 0;
-    height: 260px;
-}
+/* ------------------------------------ BUTTONS ------------------------------------------------------ */
 
 .btn{
     --bs-btn-padding-x: 2rem;
@@ -90,6 +74,83 @@ body {
     --bs-btn-disabled-bg: transparent;
     --bs-gradient: none;
 }
+
+
+/* --------------------------------- CARD --------------------------------------------------------- */
+
+.card {
+    --bs-card-spacer-y: 1.3rem;
+    --bs-card-spacer-x: 1.3rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 1.3rem;
+    --bs-card-box-shadow: ;
+    box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.03);
+    --bs-card-inner-border-radius: calc(1.3rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: 100%;
+    --bs-card-width:100%;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+}
+.card figure{margin:0}
+.card img.img-fluid{
+    border-radius: 1.3rem 1.3rem 0 0;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card h3, .card .h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+
+.card .pins-group{
+    left: .5em;
+    top: .5em;
+}
+
+.card .pins-group svg{
+    height: 13px;
+    width: auto;
+}
+
+
+.card .btn-group-sm>.btn, .card .btn-sm {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.7rem;
+    --bs-btn-font-size: 0.7rem;
+    font-family:inherit;
+    --bs-btn-border-radius: 1.5rem;
+}
+
+.card .btn-destacado-color{
+    background-color: #FF1200;
+    border-width: 1px;
+    border-color: #FF1200;
+    --bs-btn-focus-shadow-rgb: #c50d00;
+}
+
+.card .btn-en-vivo-color{
+    background-color: #2D2D2D;
+    border-width: 1px;
+    border-color: #2D2D2D;
+    --bs-btn-focus-shadow-rgb: #070707;
+}
+/* 
+---------------------------------------------------------------------------------------------------------- */
  
 .header {
     height: 90px;
@@ -116,14 +177,14 @@ body {
 }
 
 .navbar{
-    --bs-navbar-brand-margin-end: 2.5rem!important;
+    --bs-navbar-brand-margin-end: 2rem!important;
 }
 
 .navbar-nav{
     width: 100%;
     --bs-navbar-color:#1E1712;
     --bs-navbar-hover-color: rgb(239, 72, 35);
-    --bs-navbar-nav-link-padding-x: 2rem;
+    --bs-navbar-nav-link-padding-x: 1.3rem;
     --bs-nav-link-padding-y: 0.9rem!important;
 }
 
@@ -134,6 +195,7 @@ body {
 .nav-link{
     font-family: 'Renogare', sans-serif;
     border-radius: .8rem;
+    font-size: 15px;
 }
 
 .nav-link:hover {
@@ -144,7 +206,6 @@ body {
     background-color: transparent;
     border: none;
     display: flex;
-
     align-items: center;
 }
 
@@ -168,6 +229,10 @@ footer .text-reset {
     font-family: 'Renogare';
     font-size: 15px;
     text-decoration: none;
+}
+
+footer .copyright, footer .copyright .text-reset{
+    font-size: 0.8rem;
 }
 /* 
 -----------HOME - CATEGORIES ----------------- */
