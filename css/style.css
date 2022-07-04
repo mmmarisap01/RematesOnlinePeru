@@ -38,6 +38,9 @@ body {
 .h1, h1{
     font-family: 'Renogare', sans-serif;
 }
+.h4, h4{
+font-size: calc(1rem + .3vw);
+}
 
 @media (min-width: 1200px){
     .h2, h2 {
@@ -49,9 +52,106 @@ body {
     }
 }
 
-.bg-lightgray{
+/* --------------------------------------- COLORS ------------------------------------------------------- */
+.bg-light-gray{
     background-color: #F0ECEA;
 }
+
+.bg-light-beige{
+    background-color: #E3D2C1;
+}
+
+.bg-extra-light-blue{
+    background-color: #E5E5E5;
+}
+/* 
+------------------------------------ SPECIAL CONTAINERS & ELEMENTS in BREAKPOINTS----------------------------------------------- */
+.sell-buy-box p{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.sell-buy-box:hover{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sell-buy-box:hover .btn-arrow{
+    background-color: #EF4823;
+    border-color: #EF4823;
+}
+
+
+.sell-buy-box:hover .fa-arrow-right{
+    color: #fff;
+    transform: translateX(4px);
+}
+
+
+.sell-img, .buy-img{
+    position: absolute;
+    top:2rem;
+    width: 50%;
+    max-width: 550px;
+}
+
+.sell-img{
+    right: 0;
+}
+
+
+@media (min-width: 576px){
+    .container-middle {
+        max-width: 420px;
+    }
+
+}
+
+@media (min-width: 768px){
+    .container-middle {
+        max-width: 360px;
+        height: 360px;
+    }
+
+    .buy-img{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        left: 0;
+    }
+
+}
+
+@media (min-width: 992px){
+    .container-middle {
+        max-width: 480px;
+    }
+
+    .sell-img, .buy-img{
+        top: inherit;
+        bottom: 0;
+        width:80%;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-middle{
+        max-width: 570px;
+       
+    }
+}
+
+@media (min-width: 1400px){
+    .container-middle{
+        max-width: 660px;
+        
+    }
+}
+
 
 /* ------------------------------------ BUTTONS ------------------------------------------------------ */
 
