@@ -415,64 +415,58 @@
 
 <!----------------------------------------- SECCION FORMULARIO ----------------------------- -->
             <section class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="container py-5">
+                    <div class="row mb-5">
+                        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                             <h2 class="mb-3">Consulta Rápida</h2>
                             <h4 class="text-center text-xl-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum perspiciatis labore eaque?</h4>
-                            <button class="btn btn-outline-secondary mt-3 mb-3 mb-xl-0 align-self-xl-start" href="#">Ver todos</button>
                         </div>
-                        <div class="col-xl-9">
+                        <div class="col-md-8">
                             <form action="">
-                                    <div class="form-main">
-                                        <div class="input-group">
+                                    <div class="row g-3 mb-3">
+                                        <div class="form-group col-md-6">
                                             <label htmlFor="name">Nombre y Apellido*</label>
-                                            <input value="" type="text" id="" name="name"/>
+                                            <input value="" type="text" class="form-control" id="" name="name" placeholder="Escribe nombre y apellido" required/>
                                         </div>
-                                        <div class="input-group">
+                                        <div class="form-group col-md-6">
                                             <label htmlFor="email">Email*</label>
-                                            <input value="" type="text" id="" name="email"/>
-                                        </div>
-            
-                                        <div class="input-group">
-                                            <label htmlFor="description">Descripción</label>
-                                            <textarea value={experienceData.description} onChange={handleInputChange}
-                                                      name="description" id="description" cols="30" rows="5"
-                                                      class="form-description"/>
-                                        </div>
-                                        <div class="input-group-row-3">
-                                            <div>
-                                                <label htmlFor="price">Precio</label>
-                                                <input value={experienceData.price} onChange={handleInputChange} type="text"
-                                                       name="price" class="form-price"/>
-                                            </div>
-                                            <div>
-                                                <label htmlFor="duration">Duración</label>
-                                                <input value={experienceData.duration} onChange={handleInputChange} id="duration"
-                                                       name="duration" class="form-duration"/>
-                                            </div>
-                                            <div>
-                                                <label htmlFor="">Accesibilidad</label>
-                                                <select onChange={handleInputChange} name="accessibility" id="accessibility"
-                                                        class="form-acces">
-                                                    <option value={experienceData.accessibility}> Yes</option>
-                                                    <option value={experienceData.accessibility}> No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="input-group">
-                                            <label htmlFor="accessibilityDescription">Detalles de accesibilidad</label>
-                                            <textarea value={experienceData.accessibilityDescription} onChange={handleInputChange}
-                                                      name="accessibilityDescription" id="accessibilityDescription" cols="30"
-                                                      rows="2" class="form-acces-detail"/>
+                                            <input value="" type="text" class="form-control" id="" name="email" placeholder="Escribe email" required/>
                                         </div>
                                     </div>
-
-                                <section class="form-buttons">
+                                    <div class="row g-3 mb-3">
+                                        <div class="form-group col-md-6">
+                                            <label htmlFor="telephone">Teléfono</label>
+                                            <input value="" type="text" class="form-control" id="" name="telephone" placeholder="Agrega un teléfono" />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label htmlFor="company">Empresa</label>
+                                            <input value="" type="text" class="form-control" id="" name="company" placeholder="Empresa que perteneces" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="form-group col-12">
+                                            <label for="auctionType">Tipo de Remate</label>
+                                            <select id="" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="form-group col-12">
+                                            <label for="description" class="form-label">Descripción</label>
+                                            <textarea class="form-control" id="description" rows="3"></textarea>
+                                        </div>                                      
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="form-check col-12">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                                          <label class="form-check-label" for="gridCheck">
+                                            Deseo recibir el Newsletter
+                                          </label>
+                                        </div>
+                                    </div>
                                     <button type="submit" class="btn btn-primary btn-modal" data-toggle="" data-target="">
-                                        {props.experienceData ? 'Guardar cambios' : 'Guardar'}
-                                    </button>
-                                </section>
                             </form>
                         </div>
                     </div>
