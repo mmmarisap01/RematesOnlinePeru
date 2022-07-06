@@ -551,14 +551,14 @@ font-size: calc(1rem + .3vw);
 }
 
 .hero{
-    height: 645px;
+    height: 95vh;
     background-image: url("../img/hero-xl-img.png");
     background-size: cover;
     background-position: center;
 }
 
 .hero > div{
-    margin-top: 130px;
+    margin-top: 30vh;
 }
 
 .navbar{
