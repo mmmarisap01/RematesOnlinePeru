@@ -524,7 +524,7 @@ font-size: calc(1rem + .3vw);
 }
 
 /* 
----------------------------------------------------------------------------------------------------------- */
+-------------------------------------------- HEADER -------------------------------------------------------------- */
  
 .header {
     background-color: #FFFFFF;
@@ -557,6 +557,19 @@ font-size: calc(1rem + .3vw);
     max-height:500px;
     min-height: 260px;
 }
+
+.no-hero{
+    height:70px;
+}
+
+@media (min-width: 1200px){
+    .no-hero{
+        height:90px ;
+       
+    }
+}
+
+
 
 .hero > div{
     margin-top: 90px;
