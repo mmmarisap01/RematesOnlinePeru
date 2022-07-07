@@ -551,15 +551,40 @@ font-size: calc(1rem + .3vw);
 }
 
 .hero{
-    height: 95vh;
-    background-image: url("../img/hero-xl-img.png");
     background-size: cover;
     background-position: center;
+    height: 70vh;
+    max-height:500px;
+    min-height: 260px;
 }
 
-.hero > div{
-    margin-top: 30vh;
+.hero-index{
+    height: 95vh;
+    max-height: inherit;
+    min-height: inherit;
+    background-image: url("../img/hero-xl-img.png");
 }
+
+.hero-quiero-comprar{
+    background-image: url("../img/img-quiero-comprar.png");
+}
+
+.hero-consultar{
+    background-image: url("../img/img-consultar.png");
+}
+
+@media only screen 
+  and (orientation: landscape) {
+    .hero-index > div{
+        margin-top:70px;
+    }
+}
+
+
+.hero-quiero-comprar > div{
+    margin-top: 90px;
+}
+
 
 .navbar{
     --bs-navbar-brand-margin-end: 2rem!important;
@@ -607,6 +632,9 @@ font-size: calc(1rem + .3vw);
     }
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--bs-navbar-active-color);
+}
 
 .navbar-nav button svg{
     height: 24px;
@@ -621,7 +649,7 @@ footer h6{
     font-size: 15px;
 }
 
-footer a:hover{
+footer a:hover, .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
     color: rgb(239, 72, 35)!important;
 }
 
