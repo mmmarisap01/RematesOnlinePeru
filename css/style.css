@@ -581,6 +581,10 @@ font-size: calc(1rem + .3vw);
     background-image: url("../img/img-consultar.png");
 }
 
+.hero-quiero-vender{
+    background-image: url("../img/img-quiero-vender.png");
+}
+
 @media only screen 
   and (orientation: landscape) {
     .hero > div{
