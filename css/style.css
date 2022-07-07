@@ -644,6 +644,18 @@ font-size: calc(1rem + .3vw);
     
 }
 
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+}
+
+.breadcrumb .breadcrumb-item {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+
 footer h6{
     font-family: 'Renogare', sans-serif;
     font-size: 15px;
