@@ -558,11 +558,19 @@ font-size: calc(1rem + .3vw);
     min-height: 260px;
 }
 
+.hero > div{
+    margin-top: 90px;
+}
+
 .hero-index{
     height: 95vh;
     max-height: inherit;
     min-height: inherit;
     background-image: url("../img/hero-xl-img.png");
+}
+
+.hero-index div{
+    margin-top: 0;
 }
 
 .hero-quiero-comprar{
@@ -575,15 +583,11 @@ font-size: calc(1rem + .3vw);
 
 @media only screen 
   and (orientation: landscape) {
-    .hero-index > div{
+    .hero > div{
         margin-top:70px;
     }
 }
 
-
-.hero-quiero-comprar > div{
-    margin-top: 90px;
-}
 
 
 .navbar{
