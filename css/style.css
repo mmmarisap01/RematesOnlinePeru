@@ -32,6 +32,7 @@ html {
     --bs-link-color: #EF4823;
     --bs-link-hover-color: #E02900;
     text-underline-offset: 2px;
+    --bs-border-radius-lg: 1rem;
 }
 
 body {
@@ -91,6 +92,9 @@ font-size: calc(1rem + .3vw);
 }
 
 /* ------------------------------------ SPECIAL CONTAINERS & ELEMENTS in BREAKPOINTS----------------------------------------------- */
+
+
+
 .sell-buy-box p{
     display: -webkit-box;
     -webkit-line-clamp: 7;
