@@ -28,6 +28,12 @@ html {
     overflow:auto;
 }
 
+:root {
+    --bs-link-color: #EF4823;
+    --bs-link-hover-color: #E02900;
+    text-underline-offset: 2px;
+}
+
 body {
     background-color:#F6F3F2!important;
     height: 100%;
@@ -73,8 +79,12 @@ font-size: calc(1rem + .3vw);
 .bg-extra-light-blue{
     background-color: #E5E5E5;
 }
-/* 
------------------------------------- SPECIAL CONTAINERS & ELEMENTS in BREAKPOINTS----------------------------------------------- */
+
+.bg-extra-light-beige{
+    background-color: #efe6de;
+}
+
+/* ------------------------------------ SPECIAL CONTAINERS & ELEMENTS in BREAKPOINTS----------------------------------------------- */
 .sell-buy-box p{
     display: -webkit-box;
     -webkit-line-clamp: 7;
