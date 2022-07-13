@@ -83,6 +83,12 @@ font-size: calc(1rem + .3vw);
 .bg-extra-light-beige{
     background-color: #efe6de;
 }
+/* 
+----------------------------------------- TABLE ----------------------------------------------------------------------------------- */
+
+.table-align-middle td, .table-align-middle th{
+    vertical-align: middle;
+}
 
 /* ------------------------------------ SPECIAL CONTAINERS & ELEMENTS in BREAKPOINTS----------------------------------------------- */
 .sell-buy-box p{
